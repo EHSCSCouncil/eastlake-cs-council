@@ -31,3 +31,24 @@ body {
     text-wrap: balance;
   }
 }
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+}
+
+.mySwiper .swiper-pagination-bullet {
+  background: #000;
+}
+
+.mySwiper .swiper-button-next,
+.mySwiper .swiper-button-prev {
+  color: #000;
+}
