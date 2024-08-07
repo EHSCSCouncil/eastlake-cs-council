@@ -1,63 +1,37 @@
-import Slideshow from '@/components/Slideshow';
+import React from 'react';
 import Head from 'next/head';
-import Link from 'next/link';
+import Layout from './layout';
+import Slideshow from '@/components/Slideshow';
+import Nameplate from '@/components/Nameplate';
+import EventSchedule from '@/components/EventSchedule';
+import EventContentBlock from '@/components/EventContentBlock';
+import Sponsors from '@/components/Sponsors';
 
-function Header() {
+const Home: React.FC = () => {
   return (
-    <nav className="bg-white shadow-md">
-      <div className="container mx-auto px-4 py-2 flex justify-between items-center">
-        <div className="text-xl font-bold">CS Outreach</div>
-        <div>
-          <Link href="#" className="text-gray-900 hover:text-gray-1100 mx-2">Home</Link>
-          <Link href="#" className="text-gray-900 hover:text-gray-1100 mx-2">About</Link>
-          <Link href="#" className="text-gray-900 hover:text-gray-1100 mx-2">Programs</Link>
-          <Link href="#" className="text-gray-900 hover:text-gray-1100 mx-2">Contact</Link>
-        </div>
-      </div>
-    </nav>
-  );
-};
-function About() {
-  return (
-    <section className="container mx-auto px-4 py-16 text-center">
-      <h2 className="text-3xl font-bold mb-6">About CS Council</h2>
-      <p className="text-gray-700 leading-relaxed">
-        Our mission is to empower the next generation of computer scientists through hands-on learning experiences and community engagement.
-      </p>
-    </section>
-  );
-
-}
-
-function Footer() {
-  return (
-    <footer className="bg-gray-800 text-white py-6">
-      <div className="container mx-auto px-4 text-center">
-        <p>&copy; 2024 CS Outreach Council. All rights reserved.</p>
-      </div>
-    </footer>
-  );
-}
-
-
-export default function Home() {
-  return (
-    <div>
+    <Layout>
       <Head>
         <title>CS Outreach Council</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <main className="min-h-screen bg-gray-100">
-        <Header/>
-        <Slideshow />
-       
-        <About />
-      </main>
-
-      <Footer />
-    </div>
+      <div className="relative">
+        <img
+          src="/path/to/your/background.jpg" // Update this path to your actual image path
+          alt="Background"
+          className="w-full h-screen object-cover"
+        />
+        <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
+          <h1 className="text-white text-4xl font-bold">Hands-on Learning Experiences</h1>
+        </div>
+      </div>
+      <section className="container mx-auto px-4 py-16">
+        <Nameplate name="Name" position="President" avatarUrl="/path/to/avatar.jpg" />
+        <EventSchedule />
+        <EventContentBlock title="Sample Event" description="This is a sample event description." date="2024-08-10" />
+        <Sponsors />
+      </section>
+    </Layout>
   );
-}
+};
 
-
+export default Home;
