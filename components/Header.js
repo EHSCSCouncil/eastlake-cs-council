@@ -22,7 +22,7 @@ export default function Header() {
             </button>
             {isOpen && (
               <div className="absolute left-0 mt-2 w-48 bg-white border border-gray-100 shadow-lg z-50 rounded-md">
-                <div className="absolute -top-2 left-4 w-3 h-3 bg-white transform rotate-45 border-t border-l border-gray-200"></div>
+                <div className="absolute -top-2 left-6 w-0 h-0 border-l-8 border-l-transparent border-r-8 border-r-transparent border-b-8 border-b-white"></div>
 
                 <ul className="py-2">
                   <li>
