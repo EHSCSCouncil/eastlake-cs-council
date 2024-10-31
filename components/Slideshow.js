@@ -5,8 +5,12 @@ import { Autoplay, Navigation, Pagination } from 'swiper/modules';
 import 'swiper/swiper-bundle.css';
 
 const slides = [
-  { id: 1, image: '/slide1.jpg', text: 'Empowering the Next Generation' },
-  { id: 2, image: '/slide2.jpg', text: 'Hands-on Learning Experiences' },
+  { id: 1, image: '/slide1.jpg', text: "Empowering the next generation of computer scientists"},
+  { id: 2, image: '/slide2.jpg', text: "Engaging hands-on experiences"},
+  { id: 3, image: '/slide3.jpg', text: "Everything from engineering principles to robotics to software"},
+  { id: 4, image: '/slide4.jpg', text: "We integrate these experiences directly to classrooms"},
+  { id: 5, image: '/slide5.jpg', text: "And bring in experts from industry and academia"},
+  { id: 6, image: '/slide6.jpg', text: "Come visit our events throughout the year!"}
 ];
 
 export default function Slideshow() {

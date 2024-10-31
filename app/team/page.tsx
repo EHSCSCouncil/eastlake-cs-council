@@ -6,9 +6,18 @@ import Footer from '@/components/Footer';
 export default function Team() {
   const profiles = [
     {
-      image: '/pfps/jd.jpg', name: 'Jane Doe', description: 'Member'
+      image: '/pfps/logo.jpg', name: 'Hongning Wang', description: 'Co-President'
     },
-    {image: '/pfps/ae.jpg', name: 'Albert Einstein', description: 'Member'}
+    {
+      image: '/pfps/logo.jpg', name: 'Prisha Shah', description: 'Co-President'
+    },
+    {
+      image: '/pfps/logo.jpg', name: 'Pranav Tripathi', description: 'Co-VP'
+    },
+    {
+      image: '/pfps/logo.jpg', name: 'Harshit Agrawal', description: 'Co-VP'
+    }
+
   ];
 
   return (
