@@ -31,13 +31,13 @@ export default function Team() {
           <NameplateGrid profiles={profiles} />
         </section>
       </main>
-
+      <h2 className="text-3xl font-bold text-center mb-8">More members to be added!</h2>
       <Footer />
     </div>
   );
 }
 
 export const metadata = {
-  title: 'Tu madre',
+  title: 'Our team',
   link: "/favicon.ico"
 }
