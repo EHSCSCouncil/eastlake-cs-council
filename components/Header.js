@@ -18,14 +18,13 @@ export default function Header() {
             Home
           </Link>
           <div className="relative group">
-          
-            <<button
+      <button
         type="button"
-        onClick={toggleDropdown}
-        className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
+        className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-transparent px-3 py-2 text-sm font-semibold text-gray-900 shadow-none hover:bg-gray-50"
         id="menu-button"
         aria-expanded={isOpen}
         aria-haspopup="true"
+        onClick={toggleDropdown}
       >
         Programs
         <svg
@@ -33,6 +32,7 @@ export default function Header() {
           viewBox="0 0 20 20"
           fill="currentColor"
           aria-hidden="true"
+          data-slot="icon"
         >
           <path
             fillRule="evenodd"
@@ -53,7 +53,7 @@ export default function Header() {
           <div className="py-1" role="none">
             <Link
               href="/programs/2023"
-              className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+              className="block px-4 py-2 text-sm text-gray-700"
               role="menuitem"
               tabIndex="-1"
               id="menu-item-0"
@@ -62,7 +62,8 @@ export default function Header() {
             </Link>
           </div>
         </div>
-          </div>
+      )}
+    </div>
           <Link href="/team" className="text-gray-900 hover:text-gray-700 mx-2">
             Our Team
           </Link>
