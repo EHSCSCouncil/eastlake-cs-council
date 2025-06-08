@@ -2,10 +2,10 @@ import Head from 'next/head';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Table from '@/components/programs/Table';
-import TextBox from '@/components/programs/Description';
+import TextBox from '@/components/programs/TextBox';
 import FAQ from '@/components/programs/FAQ';
 
-export default function TeamPage() {
+export default function Page2023() {
   const events = [
     { name: '\'Spooktacular\' Codefest', date: 'November 2023', location: 'Eastlake High School', details: "STEM Fair-esque event for 250+ participants"},
     { name: 'Hour of Code', date: 'December 2023', location: 'Elementary Schools Across the District', details: "Introduced 50+ classrooms of elementary school students to computer science concepts"},

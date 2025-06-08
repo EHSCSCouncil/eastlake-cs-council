@@ -61,6 +61,28 @@ export default function Header() {
               2023-2024 Programs
             </Link>
           </div>
+          <div className="py-1" role="none">
+            <Link
+              href="/programs/2024"
+              className="block px-4 py-2 text-sm text-gray-700"
+              role="menuitem"
+              tabIndex="-1"
+              id="menu-item-0"
+            >
+              2024-2025 Programs
+            </Link>
+          </div>
+          <div className="py-1" role="none">
+            <Link
+              href="/programs/PackHacks"
+              className="block px-4 py-2 text-sm text-gray-700"
+              role="menuitem"
+              tabIndex="-1"
+              id="menu-item-0"
+            >
+              PackHacks 2025
+            </Link>
+          </div>
         </div>
       )}
     </div>

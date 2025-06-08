@@ -3,8 +3,9 @@ import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Navigation, Pagination } from 'swiper/modules';
 import 'swiper/swiper-bundle.css';
-
+import Link from 'next/link';
 const slides = [
+  {id: 0, image: '/PackHack image.jpg', text: <Link href = "/programs/PackHacks">Join us at PackHacks 2025!</Link>},
   { id: 1, image: '/slide1.jpg', text: "Empowering the next generation of computer scientists"},
   { id: 2, image: '/slide2.jpg', text: "Engaging hands-on experiences"},
   { id: 3, image: '/slide3.jpg', text: "Everything from engineering principles to robotics to software"},
