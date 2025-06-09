@@ -1,10 +1,14 @@
-
+'use client';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Table from '@/components/programs/Table';
 import TextBox from '@/components/programs/TextBox';
 import FAQ from '@/components/programs/FAQ';
-import PDFViewer from '@/components/programs/PDFViewer';
+import dynamic from 'next/dynamic';
+
+const PDFViewer = dynamic(() => import('@/components/programs/PDFViewer'), {
+  ssr: false,
+});
 import Link from 'next/link';
 import Image from 'next/image';
 export default function PackHack() {
@@ -61,8 +65,10 @@ export default function PackHack() {
     </div>
   );
 }
+/*
 export const metadata = {
     title: 'PackHacks 2025',
     link: "/favicon.ico"
   }
+    */
   
